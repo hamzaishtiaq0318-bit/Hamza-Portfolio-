@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Zari - Hamza Ishtiaq</title>
+<meta name="description" content="Golden Zari is a bespoke fashion boutique showcasing handcrafted Eastern bridal couture, formal wedding wear, and traditional embroidery. The website features i">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: "Instrument Sans", "Inter", -apple-system, sans-serif;
+  background: #fff;
+  color: #111;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px; height: 60px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid #f0f0f0;
+}
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 14px; font-weight: 500; color: #666; text-decoration: none;
+  transition: color 0.15s;
+}
+.back-link:hover { color: #111; }
+.back-arrow { display: inline-block; transition: transform 0.15s; }
+.back-link:hover .back-arrow { transform: translateX(-3px); }
+.topbar-brand {
+  font-size: 14px; font-weight: 700; color: #111;
+  text-decoration: none; letter-spacing: -0.01em;
+}
+.page {
+  max-width: 700px; margin: 0 auto; padding: 116px 40px 100px;
+}
+.project-num {
+  font-size: 11px; font-weight: 600; color: #c0c0c0;
+  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px;
+}
+.project-title {
+  font-size: clamp(44px, 9vw, 80px);
+  font-weight: 700; letter-spacing: -0.045em; line-height: 0.95;
+  color: #111; margin-bottom: 28px;
+}
+.live-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #111; color: #fff; text-decoration: none;
+  padding: 12px 22px; border-radius: 9999px;
+  font-size: 14px; font-weight: 600; letter-spacing: -0.01em;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+  margin-bottom: 60px;
+}
+.live-btn:hover {
+  background: #333; transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.14);
+}
+.info-block { border-top: 1px solid #ebebeb; }
+.info-row {
+  display: grid; grid-template-columns: 130px 1fr;
+  gap: 16px; padding: 26px 0; border-bottom: 1px solid #ebebeb;
+  align-items: start;
+}
+.info-label {
+  font-size: 11px; font-weight: 600; color: #bbb;
+  letter-spacing: 0.08em; text-transform: uppercase; padding-top: 3px;
+}
+.info-text { font-size: 15px; line-height: 1.75; color: #444; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag {
+  font-size: 12.5px; font-weight: 500; color: #555;
+  background: #f2f2f2; padding: 5px 14px; border-radius: 9999px;
+}
+.more-section { margin-top: 72px; padding-top: 32px; border-top: 1px solid #ebebeb; }
+.more-heading {
+  font-size: 11px; font-weight: 600; color: #bbb;
+  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 20px;
+}
+.more-links { display: flex; flex-direction: column; }
+.more-links a {
+  font-size: 17px; font-weight: 600; color: #111; text-decoration: none;
+  letter-spacing: -0.02em; padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: color 0.15s;
+}
+.more-links a:last-child { border-bottom: none; }
+.more-links a:hover { color: #666; }
+.more-links a::after {
+  content: "\2192"; font-size: 15px; color: #ccc;
+  transition: transform 0.15s, color 0.15s;
+}
+.more-links a:hover::after { transform: translateX(4px); color: #999; }
+@media (max-width: 600px) {
+  .topbar { padding: 0 20px; }
+  .page { padding: 96px 20px 80px; }
+  .info-row { grid-template-columns: 1fr; gap: 4px; }
+  .info-label { font-size: 10.5px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a href="/works/" class="back-link"><span class="back-arrow">&#8592;</span>&nbsp;Works</a>
+  <a href="/" class="topbar-brand">HAMZA</a>
+</header>
+<main class="page">
+  <div class="project-num">Project 03</div>
+  <h1 class="project-title">Golden Zari</h1>
+  <a href="https://goldenzari.com.pk/" target="_blank" rel="noopener noreferrer" class="live-btn">Live Preview &nbsp;&#8594;</a>
+  <div class="info-block">
+    <div class="info-row">
+      <div class="info-label">Overview</div>
+      <div class="info-text">Golden Zari is a bespoke fashion boutique showcasing handcrafted Eastern bridal couture, formal wedding wear, and traditional embroidery. The website features immersive galleries, detailed product storytelling, and a refined shopping experience that highlights the artisanship behind every garment.</div>
+    </div>
+    <div class="info-row">
+      <div class="info-label">Category</div>
+      <div class="info-text"><div class="tags"><span class="tag">E-Commerce</span><span class="tag">Bridal Couture</span></div></div>
+    </div>
+    <div class="info-row">
+      <div class="info-label">Year</div>
+      <div class="info-text">2024</div>
+    </div>
+  </div>
+  <div class="more-section">
+    <div class="more-heading">More Projects</div>
+    <div class="more-links">
+    <a href="/projects/united-auction/">United Auction</a>
+    <a href="/projects/golden-home/">Golden Home</a>
+    <a href="/projects/safe-choice/">Safe Choice</a>
+    <a href="/projects/glidely/">Glidely</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>
