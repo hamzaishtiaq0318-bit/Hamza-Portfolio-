@@ -16818,7 +16818,7 @@
                     <!--$--><a
                       class="framer-va9KM framer-fBL0P framer-1ntsxvj framer-v-1ecr0ka framer-7b55u6"
                       data-framer-name="Primary Inverse"
-                      href="#"
+                      href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" target="_blank" rel="noopener noreferrer" data-cal-link="hamza-ishtiaq-03cjw0/bookacall" data-cal-namespace="bookacall" data-cal-config='{"layout":"month_view","theme":"dark"}'
                       target="_blank"
                       rel="noopener"
                       style="
@@ -17330,7 +17330,7 @@
                     <!--$--><a
                       class="framer-va9KM framer-fBL0P framer-1ntsxvj framer-v-1ecr0ka framer-7b55u6"
                       data-framer-name="Primary Inverse"
-                      href="#"
+                      href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" target="_blank" rel="noopener noreferrer" data-cal-link="hamza-ishtiaq-03cjw0/bookacall" data-cal-namespace="bookacall" data-cal-config='{"layout":"month_view","theme":"dark"}'
                       target="_blank"
                       rel="noopener"
                       style="
@@ -17837,7 +17837,7 @@
                     <!--$--><a
                       class="framer-va9KM framer-fBL0P framer-1ntsxvj framer-v-1ecr0ka framer-7b55u6"
                       data-framer-name="Primary Inverse"
-                      href="#"
+                      href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" target="_blank" rel="noopener noreferrer" data-cal-link="hamza-ishtiaq-03cjw0/bookacall" data-cal-namespace="bookacall" data-cal-config='{"layout":"month_view","theme":"dark"}'
                       target="_blank"
                       rel="noopener"
                       style="
@@ -19239,5 +19239,24 @@
     </div>
     <!-- Start of bodyEnd -->
     <!-- End of bodyEnd -->
-  </body>
+  <!-- Cal element-click embed code begins -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "bookacall", {origin:"https://app.cal.com"});
+  Cal.ns.bookacall("ui", {"theme":"dark","styles":{"branding":{"brandColor":"#111111"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('a, button');
+    if (btn && (btn.innerText && btn.innerText.includes('Book a Call') || (btn.href && btn.href.includes('cal.com')) || btn.getAttribute('data-cal-link'))) {
+      if (window.Cal && window.Cal.ns && window.Cal.ns.bookacall) {
+        e.preventDefault();
+        window.Cal.ns.bookacall('modal', {
+          calLink: 'hamza-ishtiaq-03cjw0/bookacall',
+          config: { layout: 'month_view', theme: 'dark' }
+        });
+      }
+    }
+  }, true);
+</script>
+<!-- Cal element-click embed code ends -->
+</body>
 </html>
