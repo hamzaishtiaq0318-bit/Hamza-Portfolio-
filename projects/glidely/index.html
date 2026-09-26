@@ -1,153 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glidely - Hamza Ishtiaq</title>
-<meta name="description" content="Glidely is a modern all-in-one team collaboration workspace featuring interactive Kanban boards, real-time messaging, file sharing, and AI-assisted task plannin">
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; }
-body {
-  font-family: "Instrument Sans", "Inter", -apple-system, sans-serif;
-  background: #fff;
-  color: #111;
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-}
-.topbar {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 40px; height: 60px;
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid #f0f0f0;
-}
-.back-link {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: 14px; font-weight: 500; color: #666; text-decoration: none;
-  transition: color 0.15s;
-}
-.back-link:hover { color: #111; }
-.back-arrow { display: inline-block; transition: transform 0.15s; }
-.back-link:hover .back-arrow { transform: translateX(-3px); }
-.topbar-brand {
-  font-size: 14px; font-weight: 700; color: #111;
-  text-decoration: none; letter-spacing: -0.01em;
-}
-.page {
-  max-width: 700px; margin: 0 auto; padding: 116px 40px 100px;
-}
-.project-num {
-  font-size: 11px; font-weight: 600; color: #c0c0c0;
-  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px;
-}
-.project-title {
-  font-size: clamp(44px, 9vw, 80px);
-  font-weight: 700; letter-spacing: -0.045em; line-height: 0.95;
-  color: #111; margin-bottom: 28px;
-}
-.live-btn {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: #111; color: #fff; text-decoration: none;
-  padding: 12px 22px; border-radius: 9999px;
-  font-size: 14px; font-weight: 600; letter-spacing: -0.01em;
-  transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
-  margin-bottom: 60px;
-}
-.live-btn:hover {
-  background: #333; transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.14);
-}
-.info-block { border-top: 1px solid #ebebeb; }
-.info-row {
-  display: grid; grid-template-columns: 130px 1fr;
-  gap: 16px; padding: 26px 0; border-bottom: 1px solid #ebebeb;
-  align-items: start;
-}
-.info-label {
-  font-size: 11px; font-weight: 600; color: #bbb;
-  letter-spacing: 0.08em; text-transform: uppercase; padding-top: 3px;
-}
-.info-text { font-size: 15px; line-height: 1.75; color: #444; }
-.tags { display: flex; gap: 8px; flex-wrap: wrap; }
-.tag {
-  font-size: 12.5px; font-weight: 500; color: #555;
-  background: #f2f2f2; padding: 5px 14px; border-radius: 9999px;
-}
-.more-section { margin-top: 72px; padding-top: 32px; border-top: 1px solid #ebebeb; }
-.more-heading {
-  font-size: 11px; font-weight: 600; color: #bbb;
-  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 20px;
-}
-.more-links { display: flex; flex-direction: column; }
-.more-links a {
-  font-size: 17px; font-weight: 600; color: #111; text-decoration: none;
-  letter-spacing: -0.02em; padding: 16px 0;
-  border-bottom: 1px solid #f0f0f0;
-  display: flex; align-items: center; justify-content: space-between;
-  transition: color 0.15s;
-}
-.more-links a:last-child { border-bottom: none; }
-.more-links a:hover { color: #666; }
-.more-links a::after {
-  content: "\2192"; font-size: 15px; color: #ccc;
-  transition: transform 0.15s, color 0.15s;
-}
-.more-links a:hover::after { transform: translateX(4px); color: #999; }
-@media (max-width: 600px) {
-  .topbar { padding: 0 20px; }
-  .page { padding: 96px 20px 80px; }
-  .info-row { grid-template-columns: 1fr; gap: 4px; }
-  .info-label { font-size: 10.5px; }
-}
-</style>
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Glidely - Hamza Ishtiaq" />
-<meta property="og:description" content="Glidely is a modern all-in-one team collaboration workspace featuring interactive Kanban boards, real-time messaging, file sharing, and AI-assisted task plannin" />
-<meta property="og:image" content="https://www.hamzaportfolio.dev/assets/images/og-preview.png?v=5" />
-<meta property="og:image:secure_url" content="https://www.hamzaportfolio.dev/assets/images/og-preview.png?v=5" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Glidely - Hamza Ishtiaq" />
-<meta name="twitter:description" content="Glidely is a modern all-in-one team collaboration workspace featuring interactive Kanban boards, real-time messaging, file sharing, and AI-assisted task plannin" />
-<meta name="twitter:image" content="https://www.hamzaportfolio.dev/assets/images/og-preview.png?v=5" />
-<link rel="image_src" href="https://www.hamzaportfolio.dev/assets/images/og-preview.png?v=5" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glidely | Project by Hamza Ishtiaq</title>
+<meta name="description" content="An all-in-one workspace where teams plan, chat and share files without the clutter. A saas web app designed and built by Hamza Ishtiaq in 2026.">
+<link rel="canonical" href="https://www.hamzaportfolio.dev/projects/glidely/">
+<meta name="author" content="Hamza Ishtiaq">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/instrument-sans-medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css?v=7">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__siteReady)document.documentElement.classList.add("no-reveal")},2500);</script>
+<script src="/assets/js/site.js?v=7" defer></script>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Hamza Ishtiaq">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Glidely | Project by Hamza Ishtiaq">
+<meta property="og:description" content="An all-in-one workspace where teams plan, chat and share files without the clutter. A saas web app designed and built by Hamza Ishtiaq in 2026.">
+<meta property="og:url" content="https://www.hamzaportfolio.dev/projects/glidely/">
+<meta property="og:image" content="https://www.hamzaportfolio.dev/assets/images/og/glidely.jpg?v=7">
+<meta property="og:image:secure_url" content="https://www.hamzaportfolio.dev/assets/images/og/glidely.jpg?v=7">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Glidely website by Hamza Ishtiaq">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Glidely | Project by Hamza Ishtiaq">
+<meta name="twitter:description" content="An all-in-one workspace where teams plan, chat and share files without the clutter. A saas web app designed and built by Hamza Ishtiaq in 2026.">
+<meta name="twitter:image" content="https://www.hamzaportfolio.dev/assets/images/og/glidely.jpg?v=7">
+
+
 </head>
 <body>
-<header class="topbar">
-  <a href="/works/" class="back-link"><span class="back-arrow">&#8592;</span>&nbsp;Works</a>
-  <a href="/" class="topbar-brand">HAMZA</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="Hamza Ishtiaq, home">Hamza Ishtiaq</a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link" href="/">Home</a>
+      <a class="nav__link" href="/works/" aria-current="page">Work</a>
+      <a class="nav__link" href="/about/">About</a>
+      <a class="nav__link" href="/contact/">Contact</a>
+      <a class="btn btn--dark btn--sm header-cta" href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" data-cal>Book a call <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
 </header>
-<main class="page">
-  <div class="project-num">Project 05</div>
-  <h1 class="project-title">Glidely</h1>
-  <a href="https://glidely.site" target="_blank" rel="noopener noreferrer" class="live-btn">Live Preview &nbsp;&#8594;</a>
-  <div class="info-block">
-    <div class="info-row">
-      <div class="info-label">Overview</div>
-      <div class="info-text">Glidely is a modern all-in-one team collaboration workspace featuring interactive Kanban boards, real-time messaging, file sharing, and AI-assisted task planning. Built with a focus on developer experience, smooth animations, and a clean design system that scales from solo freelancers to growing teams.</div>
-    </div>
-    <div class="info-row">
-      <div class="info-label">Category</div>
-      <div class="info-text"><div class="tags"><span class="tag">SaaS Platform</span><span class="tag">Full Stack App</span></div></div>
-    </div>
-    <div class="info-row">
-      <div class="info-label">Year</div>
-      <div class="info-text">2024</div>
+<div class="mobile-menu" id="mobile-menu" inert>
+  <nav class="mobile-menu__links" aria-label="Mobile">
+    <a href="/">Home <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    <a href="/works/">Work <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    <a href="/about/">About <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    <a href="/contact/">Contact <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a class="btn btn--dark btn--block" href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" data-cal>Book a free call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M16 3v4M8 3v4M3.5 10h17"/></svg></a>
+    <a class="btn btn--light btn--block" href="mailto:hamzaishtiaq2491@gmail.com">Email me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7.5 8 5.5 8-5.5"/></svg></a>
+    <div class="mobile-menu__social">
+      <a href="https://www.linkedin.com/in/hamza-ishtiaq-56128b434/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/hamza.isht/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.threads.com/@hamza.isht" target="_blank" rel="noopener">Threads</a>
     </div>
   </div>
-  <div class="more-section">
-    <div class="more-heading">More Projects</div>
-    <div class="more-links">
-    <a href="/projects/united-auction/">United Auction</a>
-    <a href="/projects/golden-home/">Golden Home</a>
-    <a href="/projects/golden-zari/">Golden Zari</a>
-    <a href="/projects/safe-choice/">Safe Choice</a>
+</div>
+
+<main id="main">
+<article>
+  <section class="project-hero" aria-labelledby="project-title">
+    <div class="container">
+      <a class="back-link" href="/works/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> All work</a>
+      <p class="project-eyebrow" data-reveal>Project 02 <span class="dot" aria-hidden="true"></span> SaaS web app <span class="dot" aria-hidden="true"></span> 2026</p>
+      <h1 class="project-title" id="project-title" data-reveal style="--d:60ms">Glidely</h1>
+      <div class="project-intro" data-reveal style="--d:120ms">
+        <p class="project-summary">An all-in-one workspace where teams plan, chat and share files without the clutter.</p>
+        <div class="btn-row">
+          <a class="btn btn--dark" href="https://glidely.site" target="_blank" rel="noopener">Visit live site <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+      <dl class="meta-grid" data-reveal style="--d:160ms">
+        <div><dt>Year</dt><dd>2026</dd></div>
+        <div><dt>Project type</dt><dd>SaaS web app</dd></div>
+        <div><dt>My role</dt><dd>Design &amp; full-stack development</dd></div>
+        <div><dt>Built with</dt><dd>React + Firebase</dd></div>
+      </dl>
     </div>
-  </div>
+    <div class="container container--wide">
+      <figure class="project-shot" style="--shot-tint: #eef0ff" data-reveal>
+        <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><div class="browser__url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>glidely.site</span></div></div><div class="browser__screen"><img src="/assets/images/projects/glidely.webp" srcset="/assets/images/projects/glidely-640.webp 640w, /assets/images/projects/glidely.webp 1280w" sizes="(max-width: 1280px) 94vw, 1200px" width="1280" height="800" alt="Screenshot of the Glidely website" fetchpriority="high" decoding="async"></div></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="overview-title">
+    <div class="container split">
+      <p class="label" id="overview-title" data-reveal>Overview</p>
+      <div class="prose" data-reveal style="--d:80ms"><p>Glidely is a team collaboration app I designed and built from the ground up. It brings workspaces, Kanban boards, real-time chat, file sharing and AI-assisted planning into one clean interface, so a team never has to jump between five different tools to get work done.</p><p>My focus was speed and clarity. Screens load fast, every interaction feels smooth, and the design system stays consistent whether you&#x27;re a solo freelancer or a growing team.</p></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="features-title">
+    <div class="container">
+      <div class="split" style="margin-bottom:40px">
+        <p class="label" data-reveal>What I built</p>
+        <h2 class="h2" id="features-title" data-reveal>Key features <span class="tone">that make Glidely work.</span></h2>
+      </div>
+      <div class="feature-grid">
+<div class="feature" data-reveal style="--d:0ms"><span class="feature__num">01</span><h3>Workspaces &amp; boards</h3><p>Teams create workspaces, organise projects into boards and move cards through a drag-and-drop Kanban flow.</p></div>
+<div class="feature" data-reveal style="--d:70ms"><span class="feature__num">02</span><h3>Real-time chat</h3><p>Built-in workspace chat keeps conversations right next to the work instead of in another app.</p></div>
+<div class="feature" data-reveal style="--d:140ms"><span class="feature__num">03</span><h3>File sharing</h3><p>Upload and share files with the whole team inside each workspace.</p></div>
+<div class="feature" data-reveal style="--d:0ms"><span class="feature__num">04</span><h3>AI task planning</h3><p>Glidely AI helps turn big goals into clear, actionable tasks.</p></div>
+<div class="feature" data-reveal style="--d:70ms"><span class="feature__num">05</span><h3>Google sign-in &amp; roles</h3><p>One-click Google sign-in plus role-based access, so the right people see the right things.</p></div>
+<div class="feature" data-reveal style="--d:140ms"><span class="feature__num">06</span><h3>Always in sync</h3><p>Every change syncs instantly for everyone in the workspace.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="stack-title">
+    <div class="container split">
+      <p class="label" id="stack-title" data-reveal>Built with</p>
+      <div class="tech-list" data-reveal style="--d:80ms"><span class="tech"><span class="tech__logo"><img src="/assets/images/logos/react.svg" alt="" width="32" height="32" loading="lazy"></span>React</span><span class="tech"><span class="tech__logo"><img src="/assets/images/logos/vite.svg" alt="" width="32" height="32" loading="lazy"></span>Vite</span><span class="tech"><span class="tech__logo"><img src="/assets/images/logos/firebase-icon.svg" alt="" width="32" height="32" loading="lazy"></span>Firebase</span><span class="tech"><span class="tech__logo"><img src="/assets/images/logos/google-icon.svg" alt="" width="32" height="32" loading="lazy"></span>Google Sign-In</span><span class="tech"><span class="tech__logo"><img src="/assets/images/logos/javascript.svg" alt="" width="32" height="32" loading="lazy"></span>JavaScript</span></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Start a similar project">
+    <div class="container">
+      <div class="cta-card" data-reveal>
+        <div>
+          <h2>Want something like Glidely for your business?</h2>
+          <p>I build custom web apps and platforms that are fast, secure and easy to use. Tell me about your idea and let&#x27;s make it real.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--white" href="/contact/">Start a project <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--outline-dark" href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" data-cal>Book a call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="More projects">
+    <div class="container">
+      <a class="next-card" href="/projects/safe-choice/" data-reveal>
+        <div class="next-card__text">
+          <p class="next-card__label">Next project</p>
+          <h2 class="next-card__title">Safe Choice</h2>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="arrow-circle"><svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <span class="muted">Healthcare web app &middot; 2025</span>
+          </div>
+        </div>
+        <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><div class="browser__url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>safechoice.info</span></div></div><div class="browser__screen"><img src="/assets/images/projects/safe-choice.webp" srcset="/assets/images/projects/safe-choice-640.webp 640w, /assets/images/projects/safe-choice.webp 1280w" sizes="(max-width: 760px) 92vw, 600px" width="1280" height="800" alt="Screenshot of the Safe Choice website" loading="lazy" decoding="async"></div></div>
+      </a>
+      <div class="more-projects" data-reveal>
+        <a href="/projects/bdrvfx/"><img src="/assets/images/projects/bdrvfx-640.webp" width="640" height="400" alt="" loading="lazy"><span>bdrVFX <small>2026</small></span></a><a href="/projects/golden-zari/"><img src="/assets/images/projects/golden-zari-640.webp" width="640" height="400" alt="" loading="lazy"><span>Golden Zari <small>2025</small></span></a><a href="/projects/golden-home/"><img src="/assets/images/projects/golden-home-640.webp" width="640" height="400" alt="" loading="lazy"><span>Golden Home <small>2024</small></span></a>
+        <a href="/works/" style="justify-content:center;align-items:center;min-height:120px"><span style="justify-content:center;gap:8px">All work <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</article>
+
 </main>
+<footer class="site-footer on-dark">
+  <div class="container">
+    <div class="footer-cta" data-reveal>
+      <span class="pill"><span class="pulse" aria-hidden="true"></span>Available for new projects</span>
+      <h2 class="h2">Have a project in mind? <span class="tone">Let's build something great together.</span></h2>
+      <p>Tell me what you need: a brand-new website, an online store, or an upgrade to the one you already have.</p>
+      <div class="btn-row">
+        <a class="btn btn--white" href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" data-cal>Book a free call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M16 3v4M8 3v4M3.5 10h17"/></svg></a>
+        <a class="btn btn--outline-dark" href="/contact/">Send me a message <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="/">Hamza Ishtiaq</a>
+        <p>Full-stack web developer. I build custom websites, web apps and online stores, and upgrade Shopify, WordPress and Wix sites.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/works/">Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/hamza-ishtiaq-56128b434/" target="_blank" rel="noopener">LinkedIn <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+          <li><a href="https://www.instagram.com/hamza.isht/" target="_blank" rel="noopener">Instagram <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+          <li><a href="https://www.threads.com/@hamza.isht" target="_blank" rel="noopener">Threads <svg class="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:hamzaishtiaq2491@gmail.com">Email me</a></li>
+          <li><a href="https://cal.com/hamza-ishtiaq-03cjw0/bookacall" data-cal>Book a call</a></li>
+          <li><a href="/contact/">Contact form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Hamza Ishtiaq. All rights reserved.</span>
+      <span>Designed &amp; built by Hamza Ishtiaq</span>
+    </div>
+  </div>
+  <div class="footer-wordmark" aria-hidden="true">Hamza Ishtiaq</div>
+</footer>
+
 </body>
 </html>

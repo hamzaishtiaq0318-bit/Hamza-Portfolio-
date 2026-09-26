@@ -1,0 +1,273 @@
+[
+  {
+    "slug": "bdrvfx",
+    "name": "bdrVFX",
+    "year": 2026,
+    "url": "https://badarrrr.web.app/",
+    "domain": "badarrrr.web.app",
+    "category": "app",
+    "type": "Creator studio & store",
+    "tags": [
+      "E-commerce",
+      "Creator Studio",
+      "Web App"
+    ],
+    "role": "Design & full-stack development",
+    "platform": "JavaScript + Firebase",
+    "tint": "#f8ece6",
+    "card": "dark",
+    "summary": "A cinematic studio and store where video creators buy thumbnail packs, editing presets and plugins, or book custom edits.",
+    "overview": [
+      "bdrVFX is a creator-first studio and online store under the BADAR brand. Video creators can download ready-made thumbnail packs, After Effects and Premiere Pro packs, plugins and scripts, or book custom video editing and thumbnail design, all in one place.",
+      "I designed and built the site from scratch with a dark, cinematic look that fits the creator world, and connected it to Firebase so the product catalogue and customer accounts are managed in one place. Smooth scrolling and subtle motion make browsing feel as polished as the products themselves."
+    ],
+    "features": [
+      [
+        "Digital product store",
+        "Thumbnail packs, After Effects & Premiere Pro packs, plugins and scripts, neatly organised by category."
+      ],
+      [
+        "Cart & secure checkout",
+        "A cart that remembers what you've added, with a clean, secure checkout and instant digital delivery."
+      ],
+      [
+        "Customer accounts",
+        "Sign in with Google or email, and purchased downloads are always waiting in your account."
+      ],
+      [
+        "Live product catalogue",
+        "Products load from Firebase, so new drops go live without touching the code."
+      ],
+      [
+        "Services & pricing",
+        "Clear, flexible plans for custom video editing and thumbnail design."
+      ],
+      [
+        "Cinematic experience",
+        "A dark, high-contrast design with smooth scrolling and scroll-triggered animations."
+      ]
+    ],
+    "stack": [
+      "javascript",
+      "html",
+      "css",
+      "firebase",
+      "google"
+    ]
+  },
+  {
+    "slug": "glidely",
+    "name": "Glidely",
+    "year": 2026,
+    "url": "https://glidely.site",
+    "domain": "glidely.site",
+    "category": "app",
+    "type": "SaaS web app",
+    "tags": [
+      "SaaS",
+      "Web App",
+      "Real-time"
+    ],
+    "role": "Design & full-stack development",
+    "platform": "React + Firebase",
+    "tint": "#eef0ff",
+    "summary": "An all-in-one workspace where teams plan, chat and share files without the clutter.",
+    "overview": [
+      "Glidely is a team collaboration app I designed and built from the ground up. It brings workspaces, Kanban boards, real-time chat, file sharing and AI-assisted planning into one clean interface, so a team never has to jump between five different tools to get work done.",
+      "My focus was speed and clarity. Screens load fast, every interaction feels smooth, and the design system stays consistent whether you're a solo freelancer or a growing team."
+    ],
+    "features": [
+      [
+        "Workspaces & boards",
+        "Teams create workspaces, organise projects into boards and move cards through a drag-and-drop Kanban flow."
+      ],
+      [
+        "Real-time chat",
+        "Built-in workspace chat keeps conversations right next to the work instead of in another app."
+      ],
+      [
+        "File sharing",
+        "Upload and share files with the whole team inside each workspace."
+      ],
+      [
+        "AI task planning",
+        "Glidely AI helps turn big goals into clear, actionable tasks."
+      ],
+      [
+        "Google sign-in & roles",
+        "One-click Google sign-in plus role-based access, so the right people see the right things."
+      ],
+      [
+        "Always in sync",
+        "Every change syncs instantly for everyone in the workspace."
+      ]
+    ],
+    "stack": [
+      "react",
+      "vite",
+      "firebase",
+      "google",
+      "javascript"
+    ]
+  },
+  {
+    "slug": "safe-choice",
+    "name": "Safe Choice",
+    "year": 2025,
+    "url": "https://www.safechoice.info/",
+    "domain": "safechoice.info",
+    "category": "app",
+    "type": "Healthcare web app",
+    "tags": [
+      "Healthcare",
+      "Web App"
+    ],
+    "role": "Design & development",
+    "platform": "Custom web app",
+    "tint": "#fdeff1",
+    "summary": "A private, secure health-guidance portal designed so visitors can trust it from the very first second.",
+    "overview": [
+      "Safe Choice gives people private access to trusted health information and guidance. Because the audience is sensitive, everything about the design is built on trust and discretion: a calm interface, an age-verification step before any content, and a simple way to start a private consultation.",
+      "I kept the experience quiet and reassuring, with clear typography, soft colours and no unnecessary steps between a visitor and the help they're looking for."
+    ],
+    "features": [
+      [
+        "Age verification",
+        "A verification step confirms visitors are 18+ before they can view educational content."
+      ],
+      [
+        "Private consultations",
+        "A simple, discreet flow for starting a one-to-one consultation."
+      ],
+      [
+        "Trusted devices",
+        "Returning visitors can choose to save their details on a trusted device."
+      ],
+      [
+        "Clear, reliable information",
+        "Health guidance organised so it's easy to read and easy to find."
+      ],
+      [
+        "Discreet interface",
+        "A calm, private design that respects a sensitive audience."
+      ],
+      [
+        "Works on every screen",
+        "Fully responsive, so it's just as easy to use on a phone as on a laptop."
+      ]
+    ],
+    "stack": [
+      "html",
+      "css",
+      "javascript"
+    ]
+  },
+  {
+    "slug": "golden-zari",
+    "name": "Golden Zari",
+    "year": 2025,
+    "url": "https://goldenzari.com.pk/",
+    "domain": "goldenzari.com.pk",
+    "category": "store",
+    "type": "Shopify store",
+    "tags": [
+      "E-commerce",
+      "Shopify",
+      "Fashion"
+    ],
+    "role": "Shopify store build & theme customisation",
+    "platform": "Shopify",
+    "tint": "#f1effb",
+    "summary": "An elegant Shopify store for handcrafted bridal couture, wedding wear and traditional embroidery.",
+    "overview": [
+      "Golden Zari by Shujat is a fashion label known for handcrafted bridal couture, formal wedding wear and traditional embroidery. I built their Shopify store to feel as premium as the clothes themselves, with rich full-width imagery, an elegant look and a shopping flow that makes large collections easy to browse.",
+      "The theme is customised so the brand's team can update banners, collections and products on their own, without touching any code."
+    ],
+    "features": [
+      [
+        "Custom theme styling",
+        "A refined, editorial look that matches a luxury bridal brand."
+      ],
+      [
+        "Organised collections",
+        "Clear menus for Bridal Wear, Wedding Wear, Ready to Wear, Sarees and Jewellery."
+      ],
+      [
+        "Full-width campaigns",
+        "Large banner sections that put the photography front and centre."
+      ],
+      [
+        "Wishlist, search & accounts",
+        "Shoppers can search, save favourites and manage their orders."
+      ],
+      [
+        "Mobile-optimised shopping",
+        "Smooth browsing and checkout on phones, where most customers shop."
+      ],
+      [
+        "Easy to manage",
+        "Everything can be updated from the Shopify admin, with no developer needed."
+      ]
+    ],
+    "stack": [
+      "shopify",
+      "html",
+      "css",
+      "javascript"
+    ]
+  },
+  {
+    "slug": "golden-home",
+    "name": "Golden Home",
+    "year": 2024,
+    "url": "https://www.goldenhome.pk/",
+    "domain": "goldenhome.pk",
+    "category": "store",
+    "type": "Shopify store",
+    "tags": [
+      "E-commerce",
+      "Shopify",
+      "Home & Living"
+    ],
+    "role": "Shopify store build & theme customisation",
+    "platform": "Shopify",
+    "tint": "#f6f0e8",
+    "summary": "A premium home-textiles store selling hotel-grade linens, towels and bathrobes.",
+    "overview": [
+      "Golden Home sells hotel-grade bed linen, towels, bathrobes and bridal bedding. I set up and customised their Shopify theme to give the brand a luxury, hotel-style feel, with big lifestyle photography, a hero slider for each collection and a fast, mobile-friendly checkout.",
+      "The store also has the practical details that help it sell: a free-shipping announcement bar, a WhatsApp contact for wholesale orders and clean navigation between men's and women's collections."
+    ],
+    "features": [
+      [
+        "Customised Shopify theme",
+        "A clean, high-end design that matches the quality of the products."
+      ],
+      [
+        "Hero slider",
+        "Full-screen slides that showcase each collection with lifestyle photography."
+      ],
+      [
+        "Smart navigation",
+        "Collections for linens, towels and bathrobes, plus men's and women's ranges."
+      ],
+      [
+        "Announcement bar",
+        "Free-shipping threshold and WhatsApp wholesale contact, always in view."
+      ],
+      [
+        "Mobile-friendly checkout",
+        "A smooth path from product page to payment on any device."
+      ],
+      [
+        "Search, account & cart",
+        "Everything a shopper expects, right where they expect it."
+      ]
+    ],
+    "stack": [
+      "shopify",
+      "html",
+      "css",
+      "javascript"
+    ]
+  }
+]

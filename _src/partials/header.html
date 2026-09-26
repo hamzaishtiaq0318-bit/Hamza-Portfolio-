@@ -1,0 +1,31 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="Hamza Ishtiaq, home">Hamza Ishtiaq</a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link" href="/"{{cur_home_html}}>Home</a>
+      <a class="nav__link" href="/works/"{{cur_works_html}}>Work</a>
+      <a class="nav__link" href="/about/"{{cur_about_html}}>About</a>
+      <a class="nav__link" href="/contact/"{{cur_contact_html}}>Contact</a>
+      <a class="btn btn--dark btn--sm header-cta" href="{{cal_url}}" data-cal>Book a call {{i:arrow}}</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" inert>
+  <nav class="mobile-menu__links" aria-label="Mobile">
+    <a href="/">Home {{i:arrow-up-right}}</a>
+    <a href="/works/">Work {{i:arrow-up-right}}</a>
+    <a href="/about/">About {{i:arrow-up-right}}</a>
+    <a href="/contact/">Contact {{i:arrow-up-right}}</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a class="btn btn--dark btn--block" href="{{cal_url}}" data-cal>Book a free call {{i:calendar}}</a>
+    <a class="btn btn--light btn--block" href="mailto:{{email}}">Email me {{i:mail}}</a>
+    <div class="mobile-menu__social">
+      <a href="{{linkedin}}" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="{{instagram}}" target="_blank" rel="noopener">Instagram</a>
+      <a href="{{threads}}" target="_blank" rel="noopener">Threads</a>
+    </div>
+  </div>
+</div>

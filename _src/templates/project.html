@@ -1,0 +1,87 @@
+<article>
+  <section class="project-hero" aria-labelledby="project-title">
+    <div class="container">
+      <a class="back-link" href="/works/">{{i:arrow-left}} All work</a>
+      <p class="project-eyebrow" data-reveal>Project {{num}} <span class="dot" aria-hidden="true"></span> {{type}} <span class="dot" aria-hidden="true"></span> {{year}}</p>
+      <h1 class="project-title" id="project-title" data-reveal style="--d:60ms">{{name}}</h1>
+      <div class="project-intro" data-reveal style="--d:120ms">
+        <p class="project-summary">{{summary}}</p>
+        <div class="btn-row">
+          <a class="btn btn--dark" href="{{url}}" target="_blank" rel="noopener">Visit live site {{i:arrow-up-right}}</a>
+        </div>
+      </div>
+      <dl class="meta-grid" data-reveal style="--d:160ms">
+        <div><dt>Year</dt><dd>{{year}}</dd></div>
+        <div><dt>Project type</dt><dd>{{type}}</dd></div>
+        <div><dt>My role</dt><dd>{{role}}</dd></div>
+        <div><dt>Built with</dt><dd>{{platform}}</dd></div>
+      </dl>
+    </div>
+    <div class="container container--wide">
+      <figure class="project-shot" style="--shot-tint: {{tint}}" data-reveal>
+        {{shot_html}}
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="overview-title">
+    <div class="container split">
+      <p class="label" id="overview-title" data-reveal>Overview</p>
+      <div class="prose" data-reveal style="--d:80ms">{{overview_html}}</div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="features-title">
+    <div class="container">
+      <div class="split" style="margin-bottom:40px">
+        <p class="label" data-reveal>What I built</p>
+        <h2 class="h2" id="features-title" data-reveal>Key features <span class="tone">that make {{name}} work.</span></h2>
+      </div>
+      <div class="feature-grid">
+{{features_html}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="stack-title">
+    <div class="container split">
+      <p class="label" id="stack-title" data-reveal>Built with</p>
+      <div class="tech-list" data-reveal style="--d:80ms">{{stack_html}}</div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Start a similar project">
+    <div class="container">
+      <div class="cta-card" data-reveal>
+        <div>
+          <h2>Want something like {{name}} for your business?</h2>
+          <p>{{cta_text}}</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--white" href="/contact/">Start a project {{i:arrow}}</a>
+          <a class="btn btn--outline-dark" href="{{cal_url}}" data-cal>Book a call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="More projects">
+    <div class="container">
+      <a class="next-card" href="/projects/{{next_slug}}/" data-reveal>
+        <div class="next-card__text">
+          <p class="next-card__label">Next project</p>
+          <h2 class="next-card__title">{{next_name}}</h2>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="arrow-circle">{{i:arrow}}</span>
+            <span class="muted">{{next_type}} &middot; {{next_year}}</span>
+          </div>
+        </div>
+        {{next_shot_html}}
+      </a>
+      <div class="more-projects" data-reveal>
+        {{more_html}}
+        <a href="/works/" style="justify-content:center;align-items:center;min-height:120px"><span style="justify-content:center;gap:8px">All work {{i:arrow}}</span></a>
+      </div>
+    </div>
+  </section>
+</article>

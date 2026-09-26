@@ -1,0 +1,39 @@
+<section class="page-hero" aria-labelledby="works-title">
+  <div class="container">
+    <p class="label label--plain" data-reveal>Work</p>
+    <h1 class="display" id="works-title" data-reveal style="--d:60ms"><span class="tone">Selected projects</span> I've designed, built and launched.</h1>
+    <p class="lead" data-reveal style="--d:120ms">From custom web apps to Shopify stores, here's a look at some of my recent work. Open any project to see what I built and why.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" aria-label="Project list">
+  <div class="container">
+    <div class="filter-bar" role="group" aria-label="Filter projects" data-reveal>
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All projects <span class="count">{{project_count}}</span></button>
+      <button class="filter-btn" type="button" data-filter="app" aria-pressed="false">Web apps <span class="count">{{app_count}}</span></button>
+      <button class="filter-btn" type="button" data-filter="store" aria-pressed="false">Shopify stores <span class="count">{{store_count}}</span></button>
+    </div>
+    <div class="index-list">
+{{works_rows_html}}
+    </div>
+  </div>
+</section>
+
+<div class="hover-preview" aria-hidden="true">
+  <div class="browser">
+    <div class="browser__bar"><i></i><i></i><i></i><div class="browser__url">{{i:lock}}<span></span></div></div>
+    <div class="browser__screen"><img src="{{first_preview}}" alt="" width="640" height="400"></div>
+  </div>
+</div>
+
+<section class="section" style="padding-top:0" aria-labelledby="works-services">
+  <div class="container">
+    <div class="head-cols">
+      <p class="label" data-reveal>What I can build for you</p>
+      <h2 class="h2" id="works-services" data-reveal><span class="tone">Don't see your type of project?</span> If it lives in a browser, I can build it.</h2>
+    </div>
+    <div class="card-grid">
+{{builds_html}}
+    </div>
+  </div>
+</section>

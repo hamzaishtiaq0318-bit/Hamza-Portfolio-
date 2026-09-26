@@ -1,0 +1,190 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__grid-bg" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <span class="pill" data-reveal><span class="pulse" aria-hidden="true"></span>Available for new projects</span>
+      <h1 class="display" id="hero-title" data-reveal style="--d:80ms"><span class="tone">Hi, I'm Hamza.</span> I build websites that look great and help your business grow.</h1>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__portrait" data-reveal style="--d:140ms">
+        <img src="/assets/images/hamza-hero.webp" srcset="/assets/images/hamza-hero-560.webp 560w, /assets/images/hamza-hero.webp 1000w" sizes="(max-width: 960px) 92vw, 500px" width="1000" height="1151" alt="Portrait of Hamza Ishtiaq, full-stack web developer" fetchpriority="high">
+      </div>
+    </div>
+    <div class="hero__side">
+      <p class="lead" data-reveal style="--d:200ms">I'm a full-stack web developer. I can build your website from scratch, create a custom web app, or upgrade the Shopify, WordPress or Wix site you already have, so it looks modern, loads fast and works perfectly on every device.</p>
+      <div class="btn-row" data-reveal style="--d:260ms">
+        <a class="btn btn--dark" href="/contact/">Start a project {{i:arrow}}</a>
+        <a class="btn btn--light" href="/works/">See my work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tools" aria-label="Platforms and tools I work with">
+  <div class="container tools__inner">
+    <p class="tools__title">Platforms &amp; tools<br>I build with</p>
+    {{tools_html}}
+  </div>
+</section>
+
+<section class="section" id="work" aria-labelledby="work-title">
+  <div class="container">
+    <div class="head-split">
+      <div data-reveal>
+        <p class="label label--plain">Featured work</p>
+        <h2 class="h2" id="work-title" style="margin-top:14px">Recent projects <span class="tone">I've designed, built and launched.</span></h2>
+      </div>
+      <a class="btn btn--light" href="/works/" data-reveal>View all work {{i:arrow}}</a>
+    </div>
+    <div class="works-grid">
+{{featured_cards_html}}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services" aria-labelledby="services-title" style="padding-top:0">
+  <div class="container">
+    <div class="head-cols">
+      <p class="label" data-reveal>Services</p>
+      <h2 class="h2" id="services-title" data-reveal><span class="tone">Whatever your website needs,</span> I&nbsp;can build it, fix it or make it better.</h2>
+    </div>
+    <div class="services">
+      <article class="service" data-reveal>
+        <div class="service__head">
+          <h3>Shopify stores</h3>
+          <div class="service__icons"><span class="service__icon"><img src="/assets/images/logos/shopify.svg" alt="Shopify logo" width="22" height="22"></span></div>
+        </div>
+        <div class="service__body">
+          <p>Launch a new online store or give your current one a fresh, modern look. I customise Shopify themes, build custom sections and make your store fast and easy to shop on mobile.</p>
+          <ul class="checks">
+            <li>{{i:check}}New store setup</li>
+            <li>{{i:check}}Theme customisation &amp; upgrades</li>
+            <li>{{i:check}}Custom sections &amp; features</li>
+            <li>{{i:check}}Speed &amp; mobile fixes</li>
+          </ul>
+        </div>
+      </article>
+      <article class="service service--featured" data-reveal style="--d:90ms">
+        <div class="service__head">
+          <h3>Custom websites &amp; web apps</h3>
+          <div class="service__icons">
+            <span class="service__icon"><img src="/assets/images/logos/react.svg" alt="React logo" width="22" height="22"></span>
+            <span class="service__icon"><img src="/assets/images/logos/nodejs-icon.svg" alt="Node.js logo" width="22" height="22"></span>
+          </div>
+        </div>
+        <div class="service__body">
+          <p>Need something unique? I build websites and web apps from scratch, from landing pages and business sites to dashboards, booking systems, marketplaces and SaaS products.</p>
+          <ul class="checks">
+            <li>{{i:check}}Business websites &amp; landing pages</li>
+            <li>{{i:check}}Web apps &amp; dashboards</li>
+            <li>{{i:check}}Logins, databases &amp; APIs</li>
+            <li>{{i:check}}Built with React &amp; Node.js</li>
+          </ul>
+        </div>
+      </article>
+      <article class="service" data-reveal style="--d:180ms">
+        <div class="service__head">
+          <h3>WordPress &amp; Wix</h3>
+          <div class="service__icons">
+            <span class="service__icon"><img src="/assets/images/logos/wordpress-icon.svg" alt="WordPress logo" width="22" height="22"></span>
+            <span class="service__icon"><img src="/assets/images/logos/wix.svg" alt="Wix logo" width="22" height="22" style="width:28px"></span>
+          </div>
+        </div>
+        <div class="service__body">
+          <p>Already on WordPress or Wix? I can redesign your site, upgrade your theme, fix what's broken and add the features you need, without starting over.</p>
+          <ul class="checks">
+            <li>{{i:check}}Theme upgrades &amp; redesigns</li>
+            <li>{{i:check}}New pages &amp; sections</li>
+            <li>{{i:check}}Bug fixes &amp; speed improvements</li>
+            <li>{{i:check}}Content &amp; layout updates</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <ul class="extras" data-reveal>
+      <li>{{i:check-circle}}Mobile-first, responsive design</li>
+      <li>{{i:check-circle}}Fast loading</li>
+      <li>{{i:check-circle}}SEO-friendly structure</li>
+      <li>{{i:check-circle}}Clean, easy-to-manage code</li>
+      <li>{{i:check-circle}}1 month of free support</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="why-title" style="padding-top:0">
+  <div class="container">
+    <div class="head-cols">
+      <p class="label" data-reveal>Why work with me</p>
+      <h2 class="h2" id="why-title" data-reveal><span class="tone">You get a developer who cares</span> about the details as much as you do.</h2>
+    </div>
+    <div class="bento">
+      <div class="tile tile--dark tile--span2" data-reveal>
+        <div class="big-number">20<sup>+</sup></div>
+        <div class="tile__text">
+          <h3>Projects delivered</h3>
+          <p>Websites, online stores and web apps for businesses and brands, each one built to work beautifully on every screen.</p>
+        </div>
+        <div class="mini-screens" aria-hidden="true">
+          <img src="/assets/images/projects/glidely-640.webp" alt="" width="640" height="400" loading="lazy">
+          <img src="/assets/images/projects/golden-zari-640.webp" alt="" width="640" height="400" loading="lazy">
+        </div>
+      </div>
+      <div class="tile" data-reveal style="--d:80ms">
+        <span class="tile__icon">{{i:layers}}</span>
+        <div><h3>Any kind of website</h3><p>Business sites, online stores, portfolios, landing pages and custom web apps.</p></div>
+      </div>
+      <div class="tile" data-reveal style="--d:160ms">
+        <div class="devices" aria-hidden="true"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div>
+        <div><h3>Mobile-first, always</h3><p>Every site is designed and tested on phones, tablets and desktops.</p></div>
+      </div>
+      <div class="tile" data-reveal>
+        <span class="tile__icon">{{i:message}}</span>
+        <div><h3>Clear communication</h3><p>You'll always know what I'm working on and what comes next.</p></div>
+      </div>
+      <div class="tile" data-reveal style="--d:80ms">
+        <span class="tile__icon">{{i:zap}}</span>
+        <div><h3>Fast &amp; SEO-friendly</h3><p>Clean code and optimised images, so your site loads quickly and is easy to find.</p></div>
+      </div>
+      <div class="tile tile--purple tile--span2" data-reveal style="--d:160ms">
+        <span class="tile__icon">{{i:life-buoy}}</span>
+        <div class="tile__text">
+          <h3>One month of free support</h3>
+          <p>I don't disappear after launch. Questions, small tweaks and fixes are included for a whole month, so you're never left on your own.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dark-panel on-dark">
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="container process">
+      <div class="process__aside"><p class="label label--plain">How it works</p></div>
+      <div>
+        <h2 class="h2" id="process-title" data-reveal>A simple process from first call to launch. <span class="tone">You'll always know what's happening and what comes next.</span></h2>
+        <ol class="steps">
+{{steps_html}}
+        </ol>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="faq__intro" data-reveal>
+      <p class="label">FAQs</p>
+      <h2 class="h2" id="faq-title"><span class="tone">Got questions? Here are the answers</span> people ask me most.</h2>
+      <p class="lead">Can't find what you're looking for? Send me a message and I'll get back to you.</p>
+      <div class="btn-row">
+        <a class="btn btn--dark" href="mailto:{{email}}">Email me {{i:mail}}</a>
+        <a class="btn btn--light" href="{{cal_url}}" data-cal>Book a call</a>
+      </div>
+    </div>
+    <div class="faq__panel" data-reveal style="--d:100ms">
+      <span class="faq__panel-tag">I'm here to help you</span>
+{{faq_items_html}}
+    </div>
+  </div>
+</section>

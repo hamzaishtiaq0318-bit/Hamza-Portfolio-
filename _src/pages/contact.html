@@ -1,0 +1,96 @@
+<section class="page-hero page-hero--center" style="padding-bottom:48px" aria-labelledby="contact-title">
+  <div class="container">
+    <div data-reveal><span class="pill"><span class="pulse" aria-hidden="true"></span>Available for new projects</span></div>
+    <h1 class="display" id="contact-title" data-reveal style="--d:60ms"><span class="tone">Have a project in mind?</span> Let's talk!</h1>
+    <p class="lead" data-reveal style="--d:120ms">Tell me a little about what you need, whether that's a new website, an online store, a redesign or a custom web app. I'll get back to you with ideas and next steps.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" aria-label="Contact options">
+  <div class="container contact-grid">
+    <div class="form-card" data-reveal>
+      <h2>Send me a message</h2>
+      <p>Fill in the form and it goes straight to my inbox.</p>
+      <form class="form" id="contact-form" action="https://formsubmit.co/{{email}}" method="POST">
+        <input type="hidden" name="_subject" value="New project inquiry from your portfolio">
+        <input type="hidden" name="_next" value="https://www.hamzaportfolio.dev/contact/?sent=1">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input class="input" id="f-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email address</label>
+            <input class="input" id="f-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@company.com" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <fieldset>
+            <legend>What can I help you with?</legend>
+            <div class="choice-group">
+              <label class="choice"><input type="radio" name="service" value="New website"><span>New website</span></label>
+              <label class="choice"><input type="radio" name="service" value="Online store"><span>Online store</span></label>
+              <label class="choice"><input type="radio" name="service" value="Custom web app"><span>Custom web app</span></label>
+              <label class="choice"><input type="radio" name="service" value="Theme upgrade / redesign"><span>Theme upgrade / redesign</span></label>
+              <label class="choice"><input type="radio" name="service" value="Something else"><span>Something else</span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <label for="f-message">Tell me about your project</label>
+          <textarea class="input" id="f-message" name="message" rows="5" placeholder="A few lines about your business, what you need and any deadlines…" required></textarea>
+        </div>
+
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        <button class="btn btn--white btn--block" type="submit">Send message {{i:arrow}}</button>
+        <p class="form-note">Prefer email? Write to me at <a href="mailto:{{email}}">{{email}}</a></p>
+      </form>
+    </div>
+
+    <div class="side-stack">
+      <div class="side-card" data-reveal style="--d:80ms">
+        <span class="tile__icon">{{i:calendar}}</span>
+        <div>
+          <h3>Prefer a quick chat?</h3>
+          <p style="margin-top:8px">Book a call and let's talk through your idea together. No pressure and no commitment.</p>
+        </div>
+        <div class="meta-pills"><span class="chip">{{i:clock}}About 15 minutes</span><span class="chip">{{i:calendar}}Pick a time that suits you</span></div>
+        <a class="btn btn--dark btn--block" href="{{cal_url}}" data-cal>Book a call {{i:arrow}}</a>
+      </div>
+      <div class="side-card" data-reveal style="--d:140ms">
+        <h3>Email me directly</h3>
+        <div class="email-box">
+          <a href="mailto:{{email}}">{{email}}</a>
+          <button class="copy-btn" type="button" data-copy="{{email}}">{{i:copy}}<span>Copy</span></button>
+        </div>
+      </div>
+      <div class="side-card" data-reveal style="--d:200ms">
+        <h3>Find me online</h3>
+        <div class="social-list">
+          <a href="{{linkedin}}" target="_blank" rel="noopener"><span>{{i:linkedin}}LinkedIn</span>{{i:arrow-up-right}}</a>
+          <a href="{{instagram}}" target="_blank" rel="noopener"><span>{{i:instagram}}Instagram</span>{{i:arrow-up-right}}</a>
+          <a href="{{threads}}" target="_blank" rel="noopener"><span>{{i:threads}}Threads</span>{{i:arrow-up-right}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="faq__intro" data-reveal>
+      <p class="label">FAQs</p>
+      <h2 class="h2" id="faq-title"><span class="tone">Before you get in touch,</span> here are a few quick answers.</h2>
+    </div>
+    <div class="faq__panel" data-reveal style="--d:100ms">
+      <span class="faq__panel-tag">I'm here to help you</span>
+{{faq_items_html}}
+    </div>
+  </div>
+</section>
