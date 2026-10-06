@@ -9,8 +9,9 @@ A fast, hand-built static site with no framework and no dependencies. It's plain
 ```
 index.html, works/, about/, contact/, projects/<slug>/, 404.html   ← generated pages (don't edit by hand)
 assets/css/site.css     ← all styles (design tokens at the top)
-assets/js/site.js       ← menu, scroll reveals, works filter/preview, Cal.com modal, contact form
+assets/js/site.js       ← menu, scroll reveals, works filter/preview, Cal.com modal, contact form, intro video
 assets/images/          ← photos, project screenshots, logos, link-preview images
+assets/video/           ← intro video on the About page (hamza-intro.mp4 + poster)
 _src/                   ← the source you edit
   projects.json         ← every project: name, year, links, description, features, tech
   pages/*.html          ← page content (home, works, about, contact, 404)

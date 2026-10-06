@@ -23,6 +23,7 @@
     initWorksIndex();
     initCopy();
     initContactForm();
+    initVideo();
     initYear();
   });
 
@@ -373,6 +374,31 @@
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  /* ---------- Intro video ----------
+     Without JS the video keeps its native controls. With JS we show a
+     branded play button over the poster and hand back the controls on play. */
+  function initVideo() {
+    [].forEach.call(document.querySelectorAll("[data-video]"), function (wrap) {
+      var video = wrap.querySelector("video");
+      var btn = wrap.querySelector(".video-play");
+      if (!video || !btn) return;
+      video.removeAttribute("controls");
+      wrap.classList.add("is-ready");
+
+      btn.addEventListener("click", function () {
+        video.setAttribute("controls", "");
+        wrap.classList.add("is-playing");
+        var p = video.play();
+        if (p && p.catch) p.catch(function () { /* the native controls are there as a fallback */ });
+      });
+      video.addEventListener("ended", function () {
+        video.removeAttribute("controls");
+        wrap.classList.remove("is-playing");
+        video.load(); // back to the poster
+      });
     });
   }
 
