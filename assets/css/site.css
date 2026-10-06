@@ -1008,4 +1008,31 @@ textarea.input { height: auto; min-height: 150px; padding: 14px 16px; resize: ve
 .tile__text { position: relative; z-index: 1; }
 .site-footer .pill { background: rgba(255, 255, 255, 0.06); color: #d4d6da; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12); }
 .side-card .tile__icon { background: #fff; }
-@media (max-width: 960px) { 
+
+/* ---------- Intro video (About) ---------- */
+.video-card { position: relative; margin: 0; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; background: var(--soft); box-shadow: 0 0 0 1px rgba(17, 17, 17, 0.06), var(--shadow-lift); }
+.video-card video { width: 100%; height: 100%; object-fit: cover; background: var(--soft); }
+.video-play {
+  display: none; position: absolute; inset: 0;
+  align-items: flex-end; justify-content: flex-start; padding: clamp(14px, 2.6vw, 32px);
+  border: 0; background: linear-gradient(180deg, rgba(17, 17, 17, 0) 55%, rgba(17, 17, 17, 0.18));
+  transition: opacity 0.35s var(--ease), visibility 0.35s;
+}
+.video-card.is-ready .video-play { display: flex; }
+.video-card.is-playing .video-play { opacity: 0; visibility: hidden; pointer-events: none; }
+.video-play__pill {
+  display: inline-flex; align-items: center; gap: 14px;
+  height: 64px; padding: 0 24px 0 8px; border-radius: 999px;
+  background: rgba(17, 17, 17, 0.9); color: #fff; box-shadow: 0 18px 40px -16px rgba(17, 17, 17, 0.6);
+  font-size: 18px; font-weight: 500; letter-spacing: -0.03em;
+  transition: transform 0.4s var(--ease), background-color 0.25s;
+}
+.video-play__pill small { font-size: 15px; color: var(--dark-muted); font-weight: 400; }
+.video-play__icon { width: 48px; height: 48px; border-radius: 50%; background: #fff; color: var(--ink); display: grid; place-items: center; }
+.video-play__icon svg { width: 20px; height: 20px; margin-left: 3px; }
+.video-play:hover .video-play__pill { transform: translateY(-2px); background: #000; }
+@media (max-width: 560px) {
+  .video-card { border-radius: var(--radius); }
+  .video-play__pill { height: 52px; padding-right: 18px; font-size: 16px; gap: 10px; }
+  .video-play__icon { width: 38px; height: 38px; }
+}
